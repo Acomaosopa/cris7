@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9eef79">
+  <title>Celebración SIUUU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" id="stage" aria-label="Animación de celebración de gol">
+    <div class="stadium-glow"></div>
+    <div class="headline" aria-live="polite">¡GOOOL!</div>
+
+    <div class="player-wrap" id="playerWrap">
+      <img class="player" src="assets/jugador.svg" alt="Jugador de fútbol celebrando un gol">
+      <!-- Oculta el balón original del dibujo para animar uno independiente. -->
+      <div class="ball-cover" aria-hidden="true"></div>
+    </div>
+
+    <div class="ball" id="ball" aria-hidden="true">
+      <svg viewBox="0 0 100 100" role="presentation">
+        <circle cx="50" cy="50" r="46" fill="#fff" stroke="#32183f" stroke-width="5"/>
+        <path d="M39 31 51 23 65 31 62 46 47 50 35 42Z" fill="#32183f"/>
+        <path d="m14 35 15-9 10 5-4 13-13 8-10-6Zm53-9 15 8 7 17-12 3-15-8Zm-45 39 14-8 14 8 1 17-14 8-15-10Zm43 0 13-8 12 8-5 18-16 6-7-10Z" fill="#32183f"/>
+        <path d="m35 42 12 8-1 16-14 9m30-29 8 11-5 17m-14-41 0-11m-2 53 0 13" fill="none" stroke="#32183f" stroke-width="4"/>
+      </svg>
+    </div>
+
+    <div class="siuuu" id="siuuu">SIUUUU!</div>
+    <div class="impact" aria-hidden="true"></div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <button class="replay" id="replay" type="button">↻ Repetir celebración</button>
+    <p class="hint">Pulsa para volver a ver la celebración</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
